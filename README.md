@@ -30,13 +30,13 @@ Eye_tracking is a method of determining where a person in looking (point of gaze
 ## 2. Code Explanation
 
 - Used Libraries:
-  - CV2 (Open CV)
-  - Mediapipe
-  - Tensor Flow
-  - PyautoGUI (Cursor)
-  - sklearn
+  - [CV2 (Open CV)](https://pypi.org/project/opencv-python/)
+  - [Mediapipe](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pypi.org/project/mediapipe/&ved=2ahUKEwjgvrWM2NaGAxUixTgGHVvlCyMQFnoECCMQAQ&usg=AOvVaw2Xtoi8jBb7k9JdNKUSq7Wu)
+  - [Tensor Flow](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pypi.org/project/tensorflow/&ved=2ahUKEwilks6X2NaGAxWy8jgGHZBkCWAQFnoECBUQAQ&usg=AOvVaw2YIamEaRJF6xY2vOSI_Ogb)
+  - [PyautoGUI (Cursor)](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pypi.org/project/PyAutoGUI/&ved=2ahUKEwiavdio2NaGAxWjzzgGHcs9JaQQFnoECCEQAQ&usg=AOvVaw3-mJiYmv6eeguQciD3fJj1)
+  - [sklearn](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pypi.org/project/scikit-learn/&ved=2ahUKEwj5qL-y2NaGAxUlzzgGHYpZB48QFnoECBMQAQ&usg=AOvVaw0o2-kfSWszVppR71GZJXJo)
   - matplotlib
-  - numpy 
+  - numpy
 
 1. Video_crop:
 * Extract the region of interest based on the necessary landmarks.
