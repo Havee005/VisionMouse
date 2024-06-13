@@ -76,32 +76,32 @@ Eye_tracking is a method of determining where a person in looking (point of gaze
   - -> Video frame -> eye state -> move cursor [set speed = 50]
  
     
-## Result
+## 3. Result
 
-### Face Detection and Eye landmark
+### 3.1. Face Detection and Eye landmark
 	- Used Mediapipe to generate facial landmarks and sticked with necessary keypoints.
 ![image](https://github.com/Havee005/VisionMouse/assets/124234544/7be2eebc-e996-4606-83bf-e7d5b547f302)
 
-### Dataset Collection
+### 3.2. Dataset Collection
 	- Appoximately 18000 images were taken, roughly each class contains 1000 images. Used those datas to train the CNN model.
  ![image](https://github.com/Havee005/VisionMouse/assets/124234544/ef8c5760-e04d-4e32-9c34-fee48bcb2f3b)
 
- ### CNN Accuracy
+### 3.3. CNN Accuracy
  	- Achieved 75% accuracy by training the model in Tensor Flow
   ![image](https://github.com/Havee005/VisionMouse/assets/124234544/e0e2413e-3d1e-4008-bbd0-042d8f7513ba)
 
 
-### Cursor Control
+### 3.4. Cursor Control
 https://github.com/Havee005/VisionMouse/assets/124234544/ea36a2a2-cea3-4e99-b541-73cbc4d6f43d
 
-### Blink and Clicking
+### 3.5. Blink and Clicking
 https://github.com/Havee005/VisionMouse/assets/124234544/9b4a897c-af6c-4f98-835e-7cbfbb69e27d
 
-## Dataset and .h5 file
+## 4. Dataset and .h5 file
 [Dataset](https://drive.google.com/drive/folders/1T9SefQ7yiQSEBzp6S4VYDZY0Lt5DQSXa?usp=drive_link)
 [.h5 file](https://drive.google.com/drive/folders/1T9SefQ7yiQSEBzp6S4VYDZY0Lt5DQSXa?usp=drive_link)
 
-## References
+## 5. References
 1. [Base Paper 1]()
 2. [Base Paper 2](https://www.researchgate.net/publication/313449701_Low_cost_eye_based_human_computer_interface_system_Eye_controlled_mouse)
 3. [EAR Algorithm](https://ieeexplore.ieee.org/document/9251035)
