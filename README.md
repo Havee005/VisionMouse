@@ -97,3 +97,11 @@ https://github.com/Havee005/VisionMouse/assets/124234544/ea36a2a2-cea3-4e99-b541
 ### Blink and Clicking
 https://github.com/Havee005/VisionMouse/assets/124234544/9b4a897c-af6c-4f98-835e-7cbfbb69e27d
 
+## Dataset and .h5 file
+[Dataset](https://drive.google.com/drive/folders/1T9SefQ7yiQSEBzp6S4VYDZY0Lt5DQSXa?usp=drive_link)
+[.h5 file](https://drive.google.com/drive/folders/1T9SefQ7yiQSEBzp6S4VYDZY0Lt5DQSXa?usp=drive_link)
+
+## References
+1. [Base Paper 1]()
+2. [Base Paper 2](https://www.researchgate.net/publication/313449701_Low_cost_eye_based_human_computer_interface_system_Eye_controlled_mouse)
+3. [EAR Algorithm](https://ieeexplore.ieee.org/document/9251035)
