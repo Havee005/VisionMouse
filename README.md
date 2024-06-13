@@ -38,38 +38,62 @@ Eye_tracking is a method of determining where a person in looking (point of gaze
   - matplotlib
   - numpy
 
-1. Video_crop:
+2.1. Video_crop:
 * Extract the region of interest based on the necessary landmarks.
   
   - -> Input video frame -> detects landmark -> crops the eye area -> Displays the cropped video(process video).
 
-2. Save_img:
+2.2. Save_img:
 * Saves the images in designated folder by capturing the individual frames when spacebar is pressed.
 * The images then used to train the CNN model.
 * Gets input from the process_video module from Video_crop file.
   
   - -> Input video frame -> Process video -> extract frame -> keyboard event [spacebar]
 
-3. Model_training:
+2.3. Model_training:
 * To train the model copy the path of main folder which contains dataset in code.
 * Output -> Weights_of_trained_model.h5 - this file contains the weight of trained model with 75% validation accuracy.
 
-4. Eyestate_predCNN:
+2.4. Eyestate_predCNN:
 * Predicts the class based on the eye movement, uses pre-trained model from CNN training.
 * Names of class are pre assigned, so when predicted the respective class's state is published as 'string' for both left_eye & right_eye.
    
    - Gets input from the process_video module from Video_crop file.
 		- -> Input video frame -> Process video -> Eye state [model.h5]
 
-6. Eye_blink:
+2.5. Eye_blink:
 * Tracks the blinking of the eye based of eye aspect ratio (EAR) algorithm.
 * The EAR algorithm uses 6 individual landmarks associated to the individual eyes, based on which the blinking ratio is calculated.
 * Before that the landmarks are converted to pixel coordinates from normalized coordinates.
   - -> Inpt video frame -> Detect landmark -> Process video -> N2P_Coordinate -> EAR [Euclidean distance] -> Eye state
-  - EAR Algorithm: ([|P2-P6|+|P3-P5|]/2[|P1-P4|])
+  - EAR Algorithm: ![image](https://github.com/Havee005/VisionMouse/assets/124234544/146a65ef-cebe-4935-bdba-907776497190)
 
-7. Cursor Control:
+
+2.6. Cursor Control:
 * Cursor movement according to the eye state.
 * Two modules are imported process video from Video crop, eye state from Eyestate_PredCNN.
 * Using cursor library.
   - -> Video frame -> eye state -> move cursor [set speed = 50]
+ 
+    
+## Result
+
+### Face Detection and Eye landmark
+	- Used Mediapipe to generate facial landmarks and sticked with necessary keypoints.
+![image](https://github.com/Havee005/VisionMouse/assets/124234544/7be2eebc-e996-4606-83bf-e7d5b547f302)
+
+### Dataset Collection
+	- Appoximately 18000 images were taken, roughly each class contains 1000 images. Used those datas to train the CNN model.
+ ![image](https://github.com/Havee005/VisionMouse/assets/124234544/ef8c5760-e04d-4e32-9c34-fee48bcb2f3b)
+
+ ### CNN Accuracy
+ 	- Achieved 75% accuracy by training the model in Tensor Flow
+  ![image](https://github.com/Havee005/VisionMouse/assets/124234544/e0e2413e-3d1e-4008-bbd0-042d8f7513ba)
+
+
+### Cursor Control
+https://github.com/Havee005/VisionMouse/assets/124234544/ea36a2a2-cea3-4e99-b541-73cbc4d6f43d
+
+### Blink and Clicking
+https://github.com/Havee005/VisionMouse/assets/124234544/9b4a897c-af6c-4f98-835e-7cbfbb69e27d
+
